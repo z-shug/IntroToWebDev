@@ -10,6 +10,34 @@ Most recent revision:
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zoe's Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css" type="text/css">
+  <style>
+    caption {
+      font-size: bold;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+
+    table, th, td {
+      border: 1px solid #0d1f2d;
+      border-collapse: collapse;
+      padding: 5px 10px;
+    }
+    table {
+      width: 90%;
+      margin: auto;
+    }
+    tr{
+      height: 30px;
+    }
+    th{
+      background-color: #546a7b;
+      color: #f2eded;
+    }
+    tr:nth-child(odd){
+      background-color: #e4c3ad;
+    }
+  </style>
 </head>
 <body>
   <main>
@@ -18,13 +46,13 @@ Most recent revision:
     </header>
     
     <nav>
-      <hr>
+      
       <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
       <p><a href="">Home</a></p>
       <p><a href="projects.html">Projects</a></p>
       <p><a href="contact.html">Contact</a></p>
       <p><a href="testimonials.html">Testimonials</a></p>
-      <hr>
+      
     </nav>
     
     <section>
@@ -39,21 +67,25 @@ Most recent revision:
         <img src="images/flowers.jpg" alt="Pink Flowers"> 
         <table>
           <caption>Employment History</caption>
-          <tr>
-            <th>Years of Employment</th>
-            <th>Title</th>
-            <th>Company</th>
-          </tr>
-          <tr>
-            <td>2022 - Present</td>
-            <td>Teaching Assistant</td>
-            <td>Wiley Edge</td>
-          </tr>
-          <tr>
-            <td>2021-2022</td>
-            <td>Instructor</td>
-            <td>Generation USa</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Years of Employment</th>
+              <th>Title</th>
+              <th>Company</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2022 - Present</td>
+              <td>Teaching Assistant</td>
+              <td>Wiley Edge</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>Instructor</td>
+              <td>Generation USa</td>
+            </tr>
+          </tbody>
         </table>
       </article>
       <article id="hobbies">
@@ -76,7 +108,7 @@ Most recent revision:
     </section>
     
     <footer>
-      <hr>
+      
       <p>&copy; 2023 Zoe Shugart. All rights reserved.</p>
     </footer>
   </main>
